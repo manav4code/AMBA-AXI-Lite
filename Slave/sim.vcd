@@ -1,0 +1,280 @@
+$date
+	Thu Oct 19 02:55:31 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module axi_control_s_top_tb $end
+$var wire 1 ! axi_wready_tb_o $end
+$var wire 1 " axi_rvalid_tb_o $end
+$var wire 2 # axi_rresp_tb_o [1:0] $end
+$var wire 32 $ axi_rdata_tb_o [31:0] $end
+$var wire 1 % axi_bvalid_tb_o $end
+$var wire 2 & axi_bresp_tb_o [1:0] $end
+$var wire 1 ' axi_awready_tb_o $end
+$var wire 1 ( axi_arready_tb_o $end
+$var reg 32 ) axi_araddr_tb_i [31:0] $end
+$var reg 1 * axi_arvalid_tb_i $end
+$var reg 32 + axi_awaddr_tb_i [31:0] $end
+$var reg 1 , axi_awvalid_tb_i $end
+$var reg 1 - axi_bready_tb_i $end
+$var reg 1 . axi_rready_tb_i $end
+$var reg 32 / axi_wdata_tb_i [31:0] $end
+$var reg 4 0 axi_wstrb_tb_i [3:0] $end
+$var reg 1 1 axi_wvalid_tb_i $end
+$var reg 1 2 clk_i $end
+$var reg 12 3 mem_address [11:0] $end
+$var reg 1 4 rst_i $end
+$scope module DUT $end
+$var wire 32 5 axi_araddr_i [31:0] $end
+$var wire 1 * axi_arvalid_i $end
+$var wire 32 6 axi_awaddr_i [31:0] $end
+$var wire 1 , axi_awvalid_i $end
+$var wire 1 - axi_bready_i $end
+$var wire 1 . axi_rready_i $end
+$var wire 32 7 axi_wdata_i [31:0] $end
+$var wire 4 8 axi_wstrb_i [3:0] $end
+$var wire 1 1 axi_wvalid_i $end
+$var wire 1 2 clk_i $end
+$var wire 1 4 rst_i $end
+$var wire 32 9 mem_wdata_w [31:0] $end
+$var wire 32 : mem_waddr_w [31:0] $end
+$var wire 32 ; mem_rdata_w [31:0] $end
+$var wire 32 < mem_raddr_w [31:0] $end
+$var wire 1 ! axi_wready_o $end
+$var wire 1 " axi_rvalid_o $end
+$var wire 2 = axi_rresp_o [1:0] $end
+$var wire 32 > axi_rdata_o [31:0] $end
+$var wire 1 % axi_bvalid_o $end
+$var wire 2 ? axi_bresp_o [1:0] $end
+$var wire 1 ' axi_awready_o $end
+$var wire 1 ( axi_arready_o $end
+$scope module MEMORY $end
+$var wire 32 @ axi_r_data_o [31:0] $end
+$var wire 1 2 clk_i $end
+$var wire 32 A p_addr_i [31:0] $end
+$var wire 2 B p_op_i [1:0] $end
+$var wire 32 C p_w_data_i [31:0] $end
+$var wire 32 D p_r_data_o [31:0] $end
+$var wire 32 E axi_w_data_i [31:0] $end
+$var wire 32 F axi_w_addr_i [31:0] $end
+$var wire 32 G axi_r_addr_i [31:0] $end
+$upscope $end
+$scope module SLAVE $end
+$var wire 32 H axi_araddr_i [31:0] $end
+$var wire 1 * axi_arvalid_i $end
+$var wire 32 I axi_awaddr_i [31:0] $end
+$var wire 1 , axi_awvalid_i $end
+$var wire 1 - axi_bready_i $end
+$var wire 1 % axi_bvalid_o $end
+$var wire 1 . axi_rready_i $end
+$var wire 1 " axi_rvalid_o $end
+$var wire 32 J axi_wdata_i [31:0] $end
+$var wire 4 K axi_wstrb_i [3:0] $end
+$var wire 1 1 axi_wvalid_i $end
+$var wire 1 2 clk_i $end
+$var wire 32 L mem_rdata_i [31:0] $end
+$var wire 1 2 rst_i $end
+$var wire 32 M mem_wdata_o [31:0] $end
+$var wire 32 N mem_waddr_o [31:0] $end
+$var wire 32 O mem_raddr_o [31:0] $end
+$var wire 1 ! axi_wready_o $end
+$var wire 2 P axi_rresp_o [1:0] $end
+$var wire 32 Q axi_rdata_o [31:0] $end
+$var wire 2 R axi_bresp_o [1:0] $end
+$var wire 1 ' axi_awready_o $end
+$var wire 1 ( axi_arready_o $end
+$var reg 1 S axi_araddr_inhibit_q $end
+$var reg 1 T axi_arready_inhibit_q $end
+$var reg 1 U axi_awaddr_inhibit_q $end
+$var reg 1 V axi_awready_inhibit_q $end
+$var reg 1 W axi_wready_inhibit_q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xW
+xV
+xU
+xT
+xS
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+bx F
+bx E
+bx D
+bz C
+bz B
+bz A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+14
+bx 3
+02
+x1
+bx 0
+bx /
+x.
+x-
+x,
+bx +
+x*
+bx )
+x(
+x'
+bx &
+x%
+bx $
+bx #
+x"
+x!
+$end
+#5
+b11 &
+b11 ?
+b11 R
+1%
+1'
+0V
+1!
+0W
+1(
+0T
+bz :
+bz F
+bz N
+bz 9
+bz E
+bz M
+1U
+11
+b11111111 /
+b11111111 7
+b11111111 J
+1,
+b10000000000000000001000000001010 +
+b10000000000000000001000000001010 6
+b10000000000000000001000000001010 I
+b1010 3
+12
+04
+#10
+02
+#15
+b1000000001010 :
+b1000000001010 F
+b1000000001010 N
+b11111111 9
+b11111111 E
+b11111111 M
+b0 &
+b0 ?
+b0 R
+0U
+b1000000001010 +
+b1000000001010 6
+b1000000001010 I
+12
+#20
+02
+#25
+b11111111 $
+b11111111 >
+b11111111 Q
+b11111111 ;
+b11111111 @
+b11111111 L
+b1000000001010 <
+b1000000001010 G
+b1000000001010 O
+b0 #
+b0 =
+b0 P
+bz 9
+bz E
+bz M
+bz &
+bz ?
+bz R
+1"
+0S
+0%
+bz :
+bz F
+bz N
+1.
+1*
+b1000000001010 )
+b1000000001010 5
+b1000000001010 H
+01
+0,
+b0 +
+b0 6
+b0 I
+12
+#30
+02
+#35
+b10101010 9
+b10101010 E
+b10101010 M
+b0 &
+b0 ?
+b0 R
+b1000000001010 :
+b1000000001010 F
+b1000000001010 N
+1%
+11
+b10101010 /
+b10101010 7
+b10101010 J
+1,
+b1000000001010 +
+b1000000001010 6
+b1000000001010 I
+12
+#40
+02
+#45
+b10101010 ;
+b10101010 @
+b10101010 L
+bz $
+bz >
+bz Q
+bz #
+bz =
+bz P
+0.
+12
+#50
+02
+#55
+12
